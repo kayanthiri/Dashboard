@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-right">
+            <img src="./assets/profile-dark.svg" alt="profile image" width="16px" height="16px" />
+            <p>User Name</p>
+        </div>
+    </header>
+    <div class="main-content">
+        <div class="sidebar">
+            <div class="profile-bar">
+                <img src="./assets/profile.svg" alt="profile image" />
+            </div>
+            <ul class="menu-items">
+                <li class="menu-item" id="home"><img src="./assets/home.png" alt="Home Icon" /><span>Home</span></li>
+                <li class="menu-item" id="kyc"><span>My KYC Status</span></li>
+                <li class="menu-item" id="aadhar"><span>Aadhar Validation</span></li>
+                <li class="menu-item" id="pan"><span>PAN Validation</span></span></li>
+                <li class="menu-item" id="contact"><span>Update Contact Info</span></li>
+            </ul>
+        </div>
+        <section class="card-main">
+            <div class="home-form">
+                <form action="" method="get" class="form d-none">
+                    <div class="full-width radio-btns">
+                        <div class="form-section">
+                            <input type="radio" id="newCustomer" name="customer" value="new customer">
+                            <label for="newCustomer">New Customer</label>
+                        </div>
+                        <div class="form-section">
+                            <input type="radio" id="existingCustomer" name="customer" value="existing customer">
+                            <label for="existingCustomer">Existing Customer</label>
+                        </div>
+                    </div>
+                    <div class="full-width input-fields">
+                        <div class="form-section existing-customer">
+                            <label for="cinNumber">CIN Number</label>
+                            <input type="number" class="input" id="cinNumber" name="CIN number" placeholder="CIN Number">
+                        </div>
+                        <div class="form-section">
+                            <label for="firstName">First Name</label>
+                            <input type="text" class="input" id="firstName" name="first name" placeholder="First Name">
+                            
+                        </div>
+                        <div class="form-section">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" class="input" id="lastName" name="last Name" placeholder="Last Name">
+                        </div>
+                        <div class="form-section">
+                            <label for="mobile">Mobile Number</label>
+                            <input type="tel" class="input" id="mobile" name="mobile number"
+                                placeholder="Mobile Number">
+                        </div>
+                        <div class="form-section">
+                            <label for="email">Email ID</label>
+                            <input type="email" class="input" id="email" name="email" placeholder="Email-ID">
+                        </div>
+                        <div class="form-section">
+                            <label for="kycType">Choose KYC Type</label>
+                            <select class="input">
+                                <option>type 1</option>
+                                <option>type 2</option>
+                                <option>type 3</option>
+                            </select>
+                        </div>
+                        <div class="form-section">
+                            <label for="aadharid">Aadhar or PAN</label>
+                            <input type="text" class="input" id="aadharid" name="aadhar" placeholder="Aadhar or PAN ID">
+                        </div>
+                    </div>
+                    <div class="btn-center">
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+    <footer class="footer">
+    </footer>
+</body>
+<script type="text/javascript" src="./script.js"></script>
+
+</html>
