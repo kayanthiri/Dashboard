@@ -60,15 +60,20 @@ body {
     color: #fff;
     cursor: pointer;
     border-bottom: 1px solid #00308F;
+    font-size: 16px;
 }
 .menu-item span  {
     padding-left: 12px;
     margin-top: 3px;
 }
 .menu-item.active, .menu-item:hover {
-    background-color: #c4c4c4;
+    background-color: #c4c4c4bf;
     color: #00308F;
-    font-weight: bold;
+    font-weight: 900;
+}
+.menu-item img {
+    width: 24px;
+    height: 24px;
 }
 .main-content {
     display: flex;
