@@ -24,3 +24,26 @@ for (let customer of customers) {
         }
     })
 }
+function getData() {
+    alert("just");
+}
+
+// popup script
+var modal = document.getElementById("homeFormModal");
+var modalClose = document.querySelector(".close");
+var popUpMsg = document.querySelector("#modalOutput");
+// var btn = document.getElementById("myBtn");
+let data = {
+    statusCode: 200,
+    message: "Modal popup data"
+}
+
+btn.onclick = function () {
+    if (data.statusCode === 200) {
+        modal.style.display = "block";
+        popUpMsg.innerHTML = data.message;
+    }
+}
+modalClose.onclick = function () {
+    modal.style.display = "none";
+}

@@ -21,10 +21,14 @@
             </div>
             <ul class="menu-items">
                 <li class="menu-item" id="home"><img src="./assets/home.png" alt="Home Icon" /><span>Home</span></li>
-                <li class="menu-item" id="kyc"><img src="./assets/kyc.png" alt="KYC status Icon" /><span>My KYC Status</span></li>
-                <li class="menu-item" id="aadhar"><img src="./assets/aadhar.png" alt="Aadhar Validation Icon" /><span>Aadhar Validation</span></li>
-                <li class="menu-item" id="pan"><img src="./assets/identity.png" alt="PAN Card Validation Icon" /><span>PAN Validation</span></span></li>
-                <li class="menu-item" id="contact"><img src="./assets/contact.png" alt="Update Contact Info Icon" /><span>Update Contact Info</span></li>
+                <li class="menu-item" id="kyc"><img src="./assets/kyc.png" alt="KYC status Icon" /><span>My KYC
+                        Status</span></li>
+                <li class="menu-item" id="aadhar"><img src="./assets/aadhar.png"
+                        alt="Aadhar Validation Icon" /><span>Aadhar Validation</span></li>
+                <li class="menu-item" id="pan"><img src="./assets/identity.png"
+                        alt="PAN Card Validation Icon" /><span>PAN Validation</span></span></li>
+                <li class="menu-item" id="contact"><img src="./assets/contact.png"
+                        alt="Update Contact Info Icon" /><span>Update Contact Info</span></li>
             </ul>
         </div>
         <section class="card-main">
@@ -43,12 +47,13 @@
                     <div class="full-width input-fields">
                         <div class="form-section existing-customer">
                             <label for="cinNumber">CIN Number</label>
-                            <input type="number" class="input" id="cinNumber" name="CIN number" placeholder="CIN Number">
+                            <input type="number" class="input" id="cinNumber" name="CIN number"
+                                placeholder="CIN Number">
                         </div>
                         <div class="form-section">
                             <label for="firstName">First Name</label>
                             <input type="text" class="input" id="firstName" name="first name" placeholder="First Name">
-                            
+
                         </div>
                         <div class="form-section">
                             <label for="lastName">Last Name</label>
@@ -77,9 +82,19 @@
                         </div>
                     </div>
                     <div class="btn-center">
-                        <button type="submit" class="submit-btn">Submit</button>
+                        <button type="button" class="submit-btn" id="myBtn">Submit</button>
                     </div>
                 </form>
+                <!-- Popup starts here -->
+                <div id="homeFormModal" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-close"><span class="close">&times;</span></div>
+                        <div class="modal-body">
+                            <p id="modalOutput"></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Popup ends here -->
             </div>
         </section>
     </div>
