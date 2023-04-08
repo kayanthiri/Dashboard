@@ -20,7 +20,8 @@
                 <img src="./assets/profile.svg" alt="profile image" />
             </div>
             <ul class="menu-items">
-                <li class="menu-item" id="home"><img src="./assets/home.png" alt="Home Icon" /><span>Home</span></li>
+                <li class="menu-item active" id="home"><img src="./assets/home.png" alt="Home Icon" /><span>Home</span>
+                </li>
                 <li class="menu-item" id="kyc"><img src="./assets/kyc.png" alt="KYC status Icon" /><span>My KYC
                         Status</span></li>
                 <li class="menu-item" id="aadhar"><img src="./assets/aadhar.png"
@@ -36,7 +37,7 @@
                 <form action="" method="get" class="form d-none">
                     <div class="full-width radio-btns">
                         <div class="form-section">
-                            <input type="radio" id="newCustomer" name="customer" value="new customer">
+                            <input type="radio" id="newCustomer" name="customer" value="new customer" checked>
                             <label for="newCustomer">New Customer</label>
                         </div>
                         <div class="form-section">
@@ -95,6 +96,85 @@
                     </div>
                 </div>
                 <!-- Popup ends here -->
+                <!-- My kyc status table starts here -->
+                <div class="kyc-status-section d-none">
+                    <!-- <div class="search-bar-section">
+                        <input type="search" placeholder="Search" name="search" id="searchKYC" class="input" />
+                    </div> -->
+                    <div class="kyc-table-main">
+                <table class="kyc-status-table">
+                    <thead>
+                        <tr>
+                            <th>S.no</th>
+                            <th>User Name</th>
+                            <th>Aadhar Number</th>
+                            <th>Aadhar Status</th>
+                            <th>PAN Card Number</th>
+                            <th>PAN Card Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Maria Anders</td>
+                            <td>123456789012</td>
+                            <td>Enable</td>
+                            <td>CEUKP2345</td>
+                            <td>Enable</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Maria Anders</td>
+                            <td>123456789012</td>
+                            <td>Enable</td>
+                            <td>CEUKP2345</td>
+                            <td>Enable</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Maria Anders</td>
+                            <td>123456789012</td>
+                            <td>Enable</td>
+                            <td>CEUKP2345</td>
+                            <td>Enable</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Maria Anders</td>
+                            <td>123456789012</td>
+                            <td>Enable</td>
+                            <td>CEUKP2345</td>
+                            <td>Enable</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Maria Anders</td>
+                            <td>123456789012</td>
+                            <td>Enable</td>
+                            <td>CEUKP2345</td>
+                            <td>Enable</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Maria Anders</td>
+                            <td>123456789012</td>
+                            <td>Enable</td>
+                            <td>CEUKP2345</td>
+                            <td>Enable</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Maria Anders</td>
+                            <td>123456789012</td>
+                            <td>Enable</td>
+                            <td>CEUKP2345</td>
+                            <td>Enable</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            </div>
+                <!-- My kyc status table ends here -->
             </div>
         </section>
     </div>

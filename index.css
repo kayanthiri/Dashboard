@@ -107,7 +107,8 @@ body {
     margin: 20px;
 }
 
-.form {
+.form,
+.kyc-status-section {
     padding: 30px;
 }
 
@@ -245,12 +246,55 @@ input[type="radio"] {
     text-decoration: none;
     cursor: pointer;
 }
+
 .modal-close {
     width: 100%;
     height: 40px;
 }
+
 .modal-body {
     text-align: center;
 }
 
 /* Popup CSS ends here */
+
+/* KYC CSS starts here */
+.kyc-table-main {
+    width: 100%;
+    height: 55vh;
+    overflow: auto;
+}
+.kyc-status-table {
+    width: 100%;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 16px 8px;
+}
+
+th {
+    position: sticky; 
+    color: #00308F;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.d-menu-block {
+    display: block;
+}
+.kyc-status-section {
+    padding: 30px;
+}
+.search-bar-section {
+    text-align: right;
+    margin-bottom: 30px;
+}
+
+/* KYC CSS ends here */
